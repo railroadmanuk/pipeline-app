@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Pipeline Test Application</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+  </head>
+  <body id="myPage">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <style>
+
+      .navbar {
+          margin-bottom: 0;
+          background-color: #483d8b;
+          z-index: 9999;
+          border: 0;
+          font-size: 12px !important;
+          line-height: 1.42857143 !important;
+          letter-spacing: 4px;
+          border-radius: 0;
+      }
+
+      .navbar li a, .navbar .navbar-brand {
+          color: #fff !important;
+      }
+
+      .navbar-nav li a:hover, .navbar-nav li.active a {
+          color: #483d8b !important;
+          background-color: #fff !important;
+      }
+
+      .navbar-default .navbar-toggle {
+          border-color: transparent;
+          color: #fff !important;
+      }
+
+      .jumbotron {
+          background-color: #483d8b;
+          color: #ffffff;
+      }
+
+      footer .glyphicon {
+          font-size: 20px;
+          margin-bottom: 20px;
+          color: #483d8b;
+      }
+      </style>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Pipelines</a>
+        </div>
+      </div>
+    </nav>
+    <div id="jumbotron" class="jumbotron text-center">
+      <h2>Welcome to the Pipeline application</h2>
+    </div>
+    <div id="time" class="container-fluid text-center">
+      <div class="row">
+        <p>The current time is: {{ timeNow }}</p>
+      </div>
+      <div class="row">
+        <p>This is version {{ app_version }} of the application</p>
+      </div>
+    </div>
+  </body>
+</html>
